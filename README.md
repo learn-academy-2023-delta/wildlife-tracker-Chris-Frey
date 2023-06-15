@@ -1,27 +1,5 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
 # Steps
 ## Setting up Rails Generate Resource (after creating database)
 rails generate resource Animal common_name:string scientific_name:string 
@@ -105,3 +83,12 @@ this gives you the return of the first item in your list
     end
   end
   try this out in postman with PATCH and updating one of the entries (don't forget to call a single id in the address bar)
+
+  <!-- done with the above means the database is set up correctly -->
+
+  # Associating another model
+  update the model files with `has_many :name` and `belongs_to :name`
+  app/models/animal.rb
+
+  ## create entries for the new model(with foreign key!)
+ 
