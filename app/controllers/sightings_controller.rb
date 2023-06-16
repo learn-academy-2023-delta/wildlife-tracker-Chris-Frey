@@ -7,7 +7,7 @@ class SightingsController < ApplicationController
   
     def show
       sighting = Sighting.find(params[:id])
-      render json: sighting
+      render json: sighting, include: [:common_name]
     end
   
     def create
