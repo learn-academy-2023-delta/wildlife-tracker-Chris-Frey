@@ -10,9 +10,9 @@ animal_b = Animal.create(common_name: "Grackle", scientific_name: "Quiscalus Qui
 animal_c = Animal.create(common_name: "Common Starling", scientific_name: "Sturnus Vulgaris")
 animal_d = Animal.create(common_name: "Mourning Dove", scientific_name: "Zenaida Macroura")
 
-sighting_a = Sighting.create(latitude: "40.730610", longitude: "-73.935242")
-sighting_b = Sighting.create(latitude: "30.26715", longitude: "-97.74306")
-sighting_c = Sighting.create(latitude: "45.512794", longitude: "-122.679565")
+sighting_a = Sighting.create(latitude: "40.730610", longitude: "-73.935242", date: "2023-06-23", animal_id: 1)
+sighting_b = Sighting.create(latitude: "30.26715", longitude: "-97.74306", date: "2023-08-04", animal_id: 2)
+sighting_c = Sighting.create(latitude: "45.512794", longitude: "-122.679565", date: "2023-01-28", animal_id: 3)
 
 sightinglog_a = SightingLog.create(animal: animal_a, sighting: sighting_b)
 sightinglog_b = SightingLog.create(animal: animal_b, sighting: sighting_a)
